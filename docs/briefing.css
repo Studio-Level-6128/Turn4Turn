@@ -22,6 +22,8 @@ figure { margin: 0; background: #0d1d27; border: 1px solid var(--line); }
 img { width: 100%; height: auto; display: block; }
 figcaption { padding: .8rem 1rem; }
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.studio-credit { display: inline-flex; align-items: center; gap: .4rem; }
+.studio-credit img { width: 90px; }
 .gallery img { aspect-ratio: 4 / 3; object-fit: cover; }
 @media (max-width: 720px) {
   .briefing, .gallery { grid-template-columns: 1fr; }

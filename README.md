@@ -5,7 +5,7 @@
 Command a four-person fireteam in a turn-based tactical game for your browser.
 Move through cover, clear buildings floor by floor, and make every action point count.
 
-> A vibe coding project by [Janis Keuper](https://github.com/keuperj), built with GPT-6 Astra.
+> A vibe coding project by <a href="https://studio-level-6128.github.io/website"><img src="docs/assets/studio-level-6128.png" width="90" alt=""> Studio Level 6128</a>, built with GPT-6 Astra.
 
 ![An airport firefight with an explosion beside the apron and runway](docs/screenshots/airport-combat.jpg)
 *Fight across airport aprons, hangars and the control tower.*
@@ -28,14 +28,14 @@ Move through cover, clear buildings floor by floor, and make every action point 
 *Use barns, equipment and vegetation as cover in the farmyard.*
 
 ## Start playing
-[Explore the mission briefing and screenshots](https://keuperj.github.io/Turn4Turn/)
+[Explore the mission briefing and screenshots](https://studio-level-6128.github.io/Turn4Turn/)
 
 [Play the game online now](https://92.205.18.100:8080/)
 
 #### Notes:
 * Test server uses self-signed certs, so you have to acknowledge the security exception
 * game is tested mainly with firefox
-* please report any issues you might find [here](https://github.com/keuperj/Turn4Turn/issues/new)
+* please report any issues you might find [here](https://github.com/Studio-Level-6128/Turn4Turn/issues/new)
 
 ## Setup Own Server
 

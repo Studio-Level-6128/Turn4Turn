@@ -23,7 +23,9 @@ try:
         browser=p.chromium.launch(headless=True,args=['--no-sandbox','--disable-webgpu','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
         page=browser.new_page(viewport={'width':1440,'height':1000});page.set_default_timeout(120000);page.goto(base);page.wait_for_function("document.querySelector('#campaign-mode').onclick!==null")
         assert page.locator('#landing').is_visible();assert page.locator('#landing').evaluate("e=>getComputedStyle(e).backgroundImage.includes('turn4turn-landing')")
-        assert page.locator('.credits a').get_attribute('href')=='https://github.com/keuperj'
+        studio=page.locator('.credits').get_by_role('link',name='Studio Level 6128',exact=True)
+        assert studio.get_attribute('href')=='https://studio-level-6128.github.io/website'
+        assert studio.locator('img').evaluate('img => img.complete && img.naturalWidth > 0')
         page.locator('#campaign-mode').click();page.wait_for_selector('#campaign-screen:visible');assert page.locator('#campaign-screen').is_visible();assert page.locator('.campaign-node').count()==10
         assert page.locator('#campaign-screen').evaluate("e=>getComputedStyle(e).backgroundImage.includes('campaign-easy')")
         assert page.locator('.campaign-choice').count()==3

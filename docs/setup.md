@@ -29,7 +29,7 @@ failures also fall back to WebGL 2.
 Clone the repository and start the server:
 
 ```sh
-git clone https://github.com/keuperj/Turn4Turn.git
+git clone https://github.com/Studio-Level-6128/Turn4Turn.git
 cd Turn4Turn
 python3 server.py
 ```
