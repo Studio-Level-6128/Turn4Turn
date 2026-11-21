@@ -28,6 +28,8 @@ Move through cover, clear buildings floor by floor, and make every action point 
 *Use barns, equipment and vegetation as cover in the farmyard.*
 
 ## Start playing
+[Explore the mission briefing and screenshots](https://keuperj.github.io/Turn4Turn/)
+
 [Play the game online now](https://92.205.18.100:8080/)
 
 #### Notes:
@@ -50,5 +52,11 @@ stored in a browser cookie; older history is trimmed to fit while totals remain.
 
 See the [gameplay guide](docs/gameplay.md) for controls and tactics, or the
 [documentation](docs/README.md) for hosting, development and adding scenarios.
+
+## Publish the project page
+
+The briefing is a static site; the playable game runs on the separate game server.
+To publish it, select **Settings → Pages → Deploy from a branch**, choose **main**
+and **/docs**, then save. No build step is required.
 
 Licensed under [GNU GPL v2](LICENSE). [Asset credits](docs/development.md#assets-and-credits).
